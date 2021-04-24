@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsh.mapper.BlogMapper">
+    <resultMap id="blog" type="com.xsh.pojo.Blog">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="flag" column="flag"/>
+        <result property="views" column="views"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="typeId" column="type_id"/>
+        <result property="firstPicture" column="first_picture"/>
+        <result property="shareStatement" column="share_statement"/>
+        <result property="published" column="published"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="commentabled" column="commentabled"/>
+        <result property="description" column="description"/>
+        <result property="recommend" column="recommend"/>
+        <result property="createTime" column="create_time"/>
+        <result property="typeId" column="type_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="tagIds" column="tag_ids"/>
+        <association property="type" javaType="com.xsh.pojo.Type">
+            <id property="id" column="typeid"/>
+            <result property="name" column="typename"/>
+        </association>
+        <association property="user" javaType="com.xsh.pojo.User">
+            <id property="id" column="uid"/>
+            <result property="nickname" column="nickname"/>
+            <result property="username" column="username"/>
+            <result property="email" column="email"/>
+            <result property="avatar" column="avatar"/>
+        </association>
+        <collection property="tags" ofType="com.xsh.pojo.Tag">
+            <id property="id" column="tagid"/>
+            <result property="name" column="tagname"/>
+        </collection>
+    </resultMap>
+    <!-- 主页博客展示-->
+    <select id="getIndexBlog" resultMap="blog">
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name typename, t.id typeid,
+        u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and u.id = b.user_id order by b.update_time desc
+    </select>
+    <!-- 推荐博客展示 -->
+    <select id="getAllRecommendBlog" resultMap="blog">
+        select id, title, recommend from t_blog order by update_time desc
+    </select>
+    <!--全局搜索博客 -->
+    <select id="getSearchBlog" resultMap="blog">
+        <bind name="pattern" value="'%' + query + '%'"/>
+        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        t.name typename,
+        u.nickname, u.avatar
+        from t_blog b, t_type t, t_user u
+        where b.type_id = t.id and u.id = b.user_id and (b.title like #{pattern} or b.content like #{pattern})
+        order by b.update_time desc
+    </select>
+
+    <!-- /*博客详情*/ -->
+    <select id="getDetailedBlog" resultMap="blog">
+        select b.id, b.first_picture, b.flag, b.title, b.content, b.views,
+        b.update_time,b.commentabled, b.share_statement, b.appreciation,
+        u.nickname, u.avatar,
+        tag.id tagid, tag.name tagname
+        from t_blog b, t_user u, t_tag tag, t_blog_tags tb
+        where b.user_id = u.id and tb.blog_id = b.id and tb.tag_id = tag.id and b.id = #{id}
+    </select>
+    <!-- /*后台博客展示*/ -->
+    <select id="getAllBlog" resultMap="blog">
+        select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published,
+        t.id typeid, t.name typename
+        from t_blog b, t_type t
+        where b.type_id = t.id /*博客类型id=类型id*/
+    </select>
+    <!-- 后台根据标题、分类、推荐搜索博客 -->
+    <select id="searchAllBlog" resultMap="blog" parameterType="com.xsh.pojo.Blog">
+        <bind name="pattern" value="'%' + title + '%'"/>
+        /*模糊查询*/
+        select b.id, b.title, b.update_time, b.recommend, b.published, b.type_id, t.id, t.name
+        from t_blog b ,t_type t
+        <where>
+            <if test="1==1">
+                b.type_id = t.id /*博客类型id=类型id*/
+            </if>
+            <if test="typeId != null">
+                and b.type_id = #{typeId} /*根据博客类型查询*/
+            </if>
+            <if test="recommend != null">
+                and b.recommend = #{recommend} /*根据博客推荐查询*/
+            </if>
+            <if test="title != null">
+                and b.title like #{pattern} /*根据博客title模糊查询*/
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,307 @@
+2021-03-09 02:23:44.186  INFO 1828 --- [restartedMain] com.xsh.MyblogApplication                : Starting MyblogApplication on PC-20190306HSGI with PID 1828 (E:\xiaocheng\myblog\target\classes started by Administrator in E:\xiaocheng\myblog)
+2021-03-09 02:23:44.191 DEBUG 1828 --- [restartedMain] com.xsh.MyblogApplication                : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-03-09 02:23:44.192  INFO 1828 --- [restartedMain] com.xsh.MyblogApplication                : The following profiles are active: dev
+2021-03-09 02:23:45.459  INFO 1828 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49696e87: startup date [Tue Mar 09 02:23:45 CST 2021]; root of context hierarchy
+2021-03-09 02:23:49.336  INFO 1828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-09 02:23:49.596  INFO 1828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-09 02:23:50.647  INFO 1828 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d07e7c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-09 02:24:00.159  INFO 1828 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2021-03-09 02:24:00.652  INFO 1828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-09 02:24:00.653  INFO 1828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-03-09 02:24:01.673  INFO 1828 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-09 02:24:01.674  INFO 1828 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 16215 ms
+2021-03-09 02:24:02.019  INFO 1828 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-03-09 02:24:02.085  INFO 1828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-03-09 02:24:02.086  INFO 1828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-03-09 02:24:02.086  INFO 1828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-03-09 02:24:02.086  INFO 1828 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-03-09 02:24:05.445  INFO 1828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-03-09 02:24:05.468  INFO 1828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-03-09 02:24:05.951  INFO 1828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-03-09 02:24:05.957  INFO 1828 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-03-09 02:24:05.960  INFO 1828 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-03-09 02:24:06.217  INFO 1828 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-03-09 02:24:08.052  INFO 1828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-03-09 02:24:08.540  INFO 1828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-09 02:24:10.106  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49696e87: startup date [Tue Mar 09 02:23:45 CST 2021]; root of context hierarchy
+2021-03-09 02:24:10.260  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.xsh.web.admin.BlogController.searchBlogs(com.xsh.pojo.Blog,int,org.springframework.ui.Model)
+2021-03-09 02:24:10.261  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.xsh.web.admin.BlogController.blogs(int,org.springframework.ui.Model)
+2021-03-09 02:24:10.263  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.xsh.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-03-09 02:24:10.264  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.xsh.web.admin.LoginController.loginPage()
+2021-03-09 02:24:10.265  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.xsh.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-03-09 02:24:10.266  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.xsh.web.IndexTagController.search(int,java.lang.String,org.springframework.ui.Model)
+2021-03-09 02:24:10.267  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.xsh.web.IndexTagController.toIndex(org.springframework.ui.Model,int)
+2021-03-09 02:24:10.268  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[POST]}" onto public java.lang.String com.xsh.web.IndexTagController.toLogin(java.lang.Long,org.springframework.ui.Model)
+2021-03-09 02:24:10.270  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-09 02:24:10.271  INFO 1828 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-09 02:24:10.338  INFO 1828 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-09 02:24:10.338  INFO 1828 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-09 02:24:10.440  INFO 1828 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-09 02:24:10.533  WARN 1828 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-03-09 02:24:14.082  INFO 1828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-09 02:24:14.157  INFO 1828 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-03-09 02:24:14.201  INFO 1828 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-03-09 02:24:14.205  INFO 1828 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-03-09 02:24:14.256  INFO 1828 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-03-09 02:24:14.373  INFO 1828 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2021-03-09 02:24:14.396  INFO 1828 --- [restartedMain] com.xsh.MyblogApplication                : Started MyblogApplication in 32.415 seconds (JVM running for 45.926)
+2021-03-09 02:24:48.670  INFO 1828 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-03-09 02:24:48.671  INFO 1828 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-03-09 02:24:48.711  INFO 1828 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2021-03-09 02:24:49.027 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2021-03-09 02:24:49.065 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==> Parameters: 
+2021-03-09 02:24:50.029 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : <==      Total: 1
+2021-03-09 02:24:50.040 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2021-03-09 02:24:50.040 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : ==> Parameters: 8(Integer)
+2021-03-09 02:24:50.301 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : <==      Total: 8
+2021-03-09 02:24:50.310 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2021-03-09 02:24:50.311 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : ==> Parameters: 
+2021-03-09 02:24:50.320 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : <==      Total: 8
+2021-03-09 02:24:50.322 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2021-03-09 02:24:50.322 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : ==> Parameters: 
+2021-03-09 02:24:50.567 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : <==      Total: 12
+2021-03-09 02:24:50.569 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : ==>  Preparing: select id, title, recommend from t_blog order by update_time desc 
+2021-03-09 02:24:50.569 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : ==> Parameters: 
+2021-03-09 02:24:50.577 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : <==      Total: 8
+2021-03-09 02:25:09.594 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2021-03-09 02:25:09.596 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==> Parameters: 
+2021-03-09 02:25:09.598 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getIndexBlog_COUNT      : <==      Total: 1
+2021-03-09 02:25:09.599 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2021-03-09 02:25:09.601 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : ==> Parameters: 8(Integer)
+2021-03-09 02:25:09.640 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getIndexBlog   : <==      Total: 8
+2021-03-09 02:25:09.642 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2021-03-09 02:25:09.642 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : ==> Parameters: 
+2021-03-09 02:25:09.648 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getBlogType       : <==      Total: 8
+2021-03-09 02:25:09.650 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2021-03-09 02:25:09.651 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : ==> Parameters: 
+2021-03-09 02:25:09.655 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getBlogTag      : <==      Total: 12
+2021-03-09 02:25:09.656 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : ==>  Preparing: select id, title, recommend from t_blog order by update_time desc 
+2021-03-09 02:25:09.657 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : ==> Parameters: 
+2021-03-09 02:25:09.668 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.m.BlogMapper.getAllRecommendBlog     : <==      Total: 8
+2021-03-09 02:25:27.358 ERROR 1828 --- [http-nio-8081-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'query' in 'class java.lang.String'] with root cause
+
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'query' in 'class java.lang.String'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2671)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAdd.getValueBody(ASTAdd.java:65)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.VarDeclSqlNode.apply(VarDeclSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:83)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy114.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy86.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy87.getSearchBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy89.getSearchBlog(Unknown Source)
+	at com.xsh.service.BlogServiceImpl.getSearchBlog(BlogServiceImpl.java:75)
+	at com.xsh.web.IndexTagController.search(IndexTagController.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-03-09 02:26:37.861 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t, t_user u WHERE b.type_id = t.id AND u.id = b.user_id 
+2021-03-09 02:26:37.862 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getIndexBlog_COUNT      : ==> Parameters: 
+2021-03-09 02:26:37.864 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getIndexBlog_COUNT      : <==      Total: 1
+2021-03-09 02:26:37.866 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.BlogMapper.getIndexBlog   : ==>  Preparing: select b.id, b.title, b.first_picture, b.views, b.update_time, b.description, t.name typename, t.id typeid, u.nickname, u.avatar from t_blog b, t_type t, t_user u where b.type_id = t.id and u.id = b.user_id order by b.update_time desc LIMIT ? 
+2021-03-09 02:26:37.867 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.BlogMapper.getIndexBlog   : ==> Parameters: 8(Integer)
+2021-03-09 02:26:37.886 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.BlogMapper.getIndexBlog   : <==      Total: 8
+2021-03-09 02:26:37.887 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TypeDao.getBlogType       : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title, b.type_id from t_type t, t_blog b where t.id = b.type_id 
+2021-03-09 02:26:37.887 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TypeDao.getBlogType       : ==> Parameters: 
+2021-03-09 02:26:37.892 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TypeDao.getBlogType       : <==      Total: 8
+2021-03-09 02:26:37.893 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TagMapper.getBlogTag      : ==>  Preparing: select t.id tid, t.name, b.id bid, b.title from t_tag t, t_blog b, t_blog_tags bt where t.id = bt.tag_id and b.id = bt.blog_id 
+2021-03-09 02:26:37.894 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TagMapper.getBlogTag      : ==> Parameters: 
+2021-03-09 02:26:37.900 DEBUG 1828 --- [http-nio-8081-exec-4] com.xsh.mapper.TagMapper.getBlogTag      : <==      Total: 12
+2021-03-09 02:26:37.902 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getAllRecommendBlog     : ==>  Preparing: select id, title, recommend from t_blog order by update_time desc 
+2021-03-09 02:26:37.903 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getAllRecommendBlog     : ==> Parameters: 
+2021-03-09 02:26:37.907 DEBUG 1828 --- [http-nio-8081-exec-4] c.x.m.BlogMapper.getAllRecommendBlog     : <==      Total: 8
+2021-03-09 02:28:58.429 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.U.findByUsernameAndPassword        : ==>  Preparing: select * from t_user where username = ? 
+2021-03-09 02:28:58.431 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.U.findByUsernameAndPassword        : ==> Parameters: 朱一鸣(String)
+2021-03-09 02:28:58.434 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.U.findByUsernameAndPassword        : <==      Total: 1
+2021-03-09 02:29:03.334 DEBUG 1828 --- [http-nio-8081-exec-9] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 02:29:03.336 DEBUG 1828 --- [http-nio-8081-exec-9] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 02:29:03.338 DEBUG 1828 --- [http-nio-8081-exec-9] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 02:29:03.339 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ? 
+2021-03-09 02:29:03.340 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer)
+2021-03-09 02:29:03.345 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 5
+2021-03-09 02:29:03.349 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 02:29:03.349 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 02:29:03.351 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 02:29:03.354 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 02:29:03.355 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 02:29:03.356 DEBUG 1828 --- [http-nio-8081-exec-9] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 02:29:12.884 DEBUG 1828 --- [http-nio-8081-exec-3] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 02:29:12.885 DEBUG 1828 --- [http-nio-8081-exec-3] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 02:29:12.887 DEBUG 1828 --- [http-nio-8081-exec-3] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 02:29:12.890 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ?, ? 
+2021-03-09 02:29:12.891 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer), 5(Integer)
+2021-03-09 02:29:12.900 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 3
+2021-03-09 02:29:12.902 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 02:29:12.902 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 02:29:12.904 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 02:29:12.907 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 02:29:12.909 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 02:29:12.911 DEBUG 1828 --- [http-nio-8081-exec-3] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 02:29:18.618 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 02:29:18.619 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 02:29:18.621 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 02:29:18.625 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ? 
+2021-03-09 02:29:18.627 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer)
+2021-03-09 02:29:18.630 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 5
+2021-03-09 02:29:18.632 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 02:29:18.632 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 02:29:18.633 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 02:29:18.635 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 02:29:18.635 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 02:29:18.644 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 02:30:33.856 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id AND b.recommend = ? AND b.title LIKE ? 
+2021-03-09 02:30:33.857 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==> Parameters: false(Boolean), %Springboot%(String)
+2021-03-09 02:30:33.884 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.m.BlogMapper.searchAllBlog_COUNT     : <==      Total: 1
+2021-03-09 02:30:33.886 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 02:30:33.887 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 02:30:33.888 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 02:30:33.889 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 02:30:33.890 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 02:30:33.891 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 02:47:05.750 DEBUG 1828 --- [http-nio-8081-exec-7] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id AND b.type_id = ? AND b.recommend = ? AND b.title LIKE ? 
+2021-03-09 02:47:05.755 DEBUG 1828 --- [http-nio-8081-exec-7] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==> Parameters: 1(Long), false(Boolean), %d%(String)
+2021-03-09 02:47:05.765 DEBUG 1828 --- [http-nio-8081-exec-7] c.x.m.BlogMapper.searchAllBlog_COUNT     : <==      Total: 1
+2021-03-09 02:47:05.769 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 02:47:05.769 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 02:47:05.771 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 02:47:05.772 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 02:47:05.772 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 02:47:05.775 DEBUG 1828 --- [http-nio-8081-exec-7] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 03:02:08.382 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 03:02:08.383 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 03:02:08.384 DEBUG 1828 --- [http-nio-8081-exec-1] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 03:02:08.387 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ? 
+2021-03-09 03:02:08.390 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer)
+2021-03-09 03:02:08.396 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 5
+2021-03-09 03:02:08.397 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 03:02:08.397 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 03:02:08.401 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 03:02:08.402 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 03:02:08.403 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 03:02:08.404 DEBUG 1828 --- [http-nio-8081-exec-1] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 03:02:10.393 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 03:02:10.394 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 03:02:10.395 DEBUG 1828 --- [http-nio-8081-exec-6] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 03:02:10.395 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ? 
+2021-03-09 03:02:10.396 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer)
+2021-03-09 03:02:10.398 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 5
+2021-03-09 03:02:10.399 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 03:02:10.400 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 03:02:10.401 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 03:02:10.402 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 03:02:10.403 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 03:02:10.405 DEBUG 1828 --- [http-nio-8081-exec-6] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 03:02:33.359 DEBUG 1828 --- [http-nio-8081-exec-10] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id AND b.recommend = ? AND b.title LIKE ? 
+2021-03-09 03:02:33.361 DEBUG 1828 --- [http-nio-8081-exec-10] c.x.m.BlogMapper.searchAllBlog_COUNT     : ==> Parameters: false(Boolean), %maven%(String)
+2021-03-09 03:02:33.363 DEBUG 1828 --- [http-nio-8081-exec-10] c.x.m.BlogMapper.searchAllBlog_COUNT     : <==      Total: 1
+2021-03-09 03:02:33.365 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 03:02:33.365 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 03:02:33.367 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 03:02:33.523 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 03:02:33.523 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 03:02:33.525 DEBUG 1828 --- [http-nio-8081-exec-10] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
+2021-03-09 03:02:36.368 DEBUG 1828 --- [http-nio-8081-exec-5] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==>  Preparing: SELECT count(0) FROM t_blog b, t_type t WHERE b.type_id = t.id 
+2021-03-09 03:02:36.369 DEBUG 1828 --- [http-nio-8081-exec-5] c.x.mapper.BlogMapper.getAllBlog_COUNT   : ==> Parameters: 
+2021-03-09 03:02:36.371 DEBUG 1828 --- [http-nio-8081-exec-5] c.x.mapper.BlogMapper.getAllBlog_COUNT   : <==      Total: 1
+2021-03-09 03:02:36.372 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.BlogMapper.getAllBlog     : ==>  Preparing: select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published, t.id typeid, t.name typename from t_blog b, t_type t where b.type_id = t.id /*博客类型id=类型id*/ LIMIT ? 
+2021-03-09 03:02:36.373 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.BlogMapper.getAllBlog     : ==> Parameters: 5(Integer)
+2021-03-09 03:02:36.380 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.BlogMapper.getAllBlog     : <==      Total: 5
+2021-03-09 03:02:36.381 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TypeDao.getAllType        : ==>  Preparing: select * from t_type 
+2021-03-09 03:02:36.381 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TypeDao.getAllType        : ==> Parameters: 
+2021-03-09 03:02:36.383 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TypeDao.getAllType        : <==      Total: 5
+2021-03-09 03:02:36.384 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TagMapper.getAllTag       : ==>  Preparing: select * from t_tag 
+2021-03-09 03:02:36.385 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TagMapper.getAllTag       : ==> Parameters: 
+2021-03-09 03:02:36.386 DEBUG 1828 --- [http-nio-8081-exec-5] com.xsh.mapper.TagMapper.getAllTag       : <==      Total: 6
